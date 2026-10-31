@@ -149,7 +149,7 @@ footer {
 .two-panel {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
 
     > div {
         flex: 1;

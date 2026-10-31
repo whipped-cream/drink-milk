@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Drink Milk! - A website by whipped-cream</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <link rel="stylesheet" href="/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header">
+                    <div class="header-logo-box">
+                        <a href="/" id="header-logo">
+                            <img src="assets/milk_oversampled.png" alt="Milk Logo" height="100">
+                        </a>
+                        <span id="header-logo-title">
+                            <a href="/">Drink Milk!</a>
+                        </span>
+                        <span id="header-logo-subtitle">
+                            A website by <a href="https://github.com/whipped-cream">
+                                <svg class="github-icon" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/>
+                                </svg>whipped-cream
+                            </a>
+                        </span>
+                    </div>
+
+                    <nav>
+                        <!--<a href="/about.html">About</a>-->
+                        <a href="/projects.html">Projects</a>
+                        <a href="/blog.html">Blog</a>
+                        <a href="/photos.html">Photography</a>
+                        <a href="https://michaellangley.co.za">Professional</a>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="content">
+                <section>
+                    <h1>
+                        Projects
+                    </h1>
+                    <p>
+                        Over the years I've worked on a bunch of things. Mostly small programming projects which are detailed below.
+                    </p>
+                </section>
+
+                <section>
+                    <a href="https://github.com/whipped-cream/pixel_planets_rs"><h2>
+                        pixel_planets_rs
+                    </h2></a>
+                    <div class="two-panel">
+                        <p style="margin-top: 0px;"> <!-- Workaround. Dunno whats a better way -->
+                            pixel_planets_rs is a Rust/<a href="https://bevy.org/">Bevy</a> port of the existing <a href="https://godotengine.org/">Godot</a>-based <a href="https://github.com/Deep-Fold/PixelPlanets">PixelPlanets</a> project,
+                            a demonstration of a set of shaders which procedurally generate planets.
+                            This port, as well as porting the system to a different engine, involved porting the shaders from GLSL to WGSL,
+                            modernising both the shader code and the application code, and also the introduction of a brand new API that is used to
+                            programmatically create planets so that it can be trivially integrated into a new game.
+                            This transforms the project from a simple demo to a much more usable library.
+                        </p>
+                        <img src="assets/projects/earthlike.gif" height="200px">
+                    </div>
+                </section>
+
+                <section>
+                    <a href="https://github.com/whipped-cream/space-game"><h2>Milky Way</h2></a>
+                    <p>
+                        The game I am developing using my pixel_planets_rs library. The game is developed in Rust using <a href="https://bevy.org/">Bevy</a>.
+                        As the game is under semi-active development there is not currently a blurb that is appropriate here.
+                        This has provided me an opportunity to learn Rust programming, and every computer student's dream is to make a game.
+                    </p>
+                </section>
+
+                <section>
+                    <a href="https://github.com/whipped-cream/PyGnomeSearchClient"><h2>PyGnomeSearchClient</h2></a>
+                    <p>
+                        A Python package for interacting with Gnome search providers.
+                        Gnome search providers are a convenient way of interacting with applications on your system, but traditionally they can only be
+                        accessed when using Gnome shell.
+                        However, despite this being how they are traditionally accessed, they are still present when Gnome shell is not running,
+                        and can be accessed by calling a standardised dbus method.
+                        This package makes discovering and interacting with the providers much more simple than using dbus directly.
+                        It's <a href="https://pypi.org/project/gnomesearchclient/">available</a> on PyPI.
+                    </p>
+                </section>
+
+                <section>
+                    <a href="https://valenwood.drinkmilk.co.za"><h2>Valenwood</h2></a>
+                    <p>
+                        Valenwood is my long-running Minecraft server which I play on every now and then.
+                    </p>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer">
+                    <span>
+                        <a href="https://github.com/whipped-cream">
+                            <svg class="github-icon" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/>
+                            </svg>whipped-cream
+                        </a>
+                    </span>
+                    <span>
+                        Made with milk!
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
