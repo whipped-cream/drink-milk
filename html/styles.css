@@ -124,6 +124,11 @@ header {
     margin-right: 0.1em;
 }
 
+section {
+    p {
+        text-align: justify;
+    }
+}
 
 footer {
     background-color: var(--charcoal);
@@ -144,7 +149,7 @@ footer {
 .two-panel {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
 
     > div {
         flex: 1;
