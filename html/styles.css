@@ -20,6 +20,13 @@ body {
     line-height: 1.6;
 }
 
+a {
+    color: var(--charcoal);
+}
+a:hover {
+    color: var(--glaucous);
+}
+
 h1, h2, h3 {
     line-height: 1.2;
 }
@@ -121,23 +128,31 @@ header {
 footer {
     background-color: var(--charcoal);
     .footer {
-        display: flex;
         margin: 0.1rem auto;
         width: min(80rem, calc(100% - 2rem));
 
         display: flex;
         justify-content: space-between;
-        align-items: end;
 
         color: var(--icy-blue);
+        a {
+            color: var(--icy-blue);
+        }
     }
 }
 
 .two-panel {
     display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    > div {
+        flex: 1;
+    }
 
     .two-panel-image {
         width: 15rem;
+        flex-shrink: 0;
     }
 }
 
